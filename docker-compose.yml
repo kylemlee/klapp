@@ -17,6 +17,7 @@ services:
       - "DB_PASS=Password1"  
     volumes:
       - ./:/go/src/github.com/kylemlee/klapp
+    working_dir: /go/src/github.com/kylemlee/klapp 
   
   db:
     image: mysql:5.7
